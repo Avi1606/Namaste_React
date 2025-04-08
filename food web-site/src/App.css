@@ -1,0 +1,114 @@
+/* App.css */
+
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Header styles to ensure full width */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Main content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Food site specific colors */
+:root {
+  --primary-color: #ff6b6b;
+  --secondary-color: #ffa502;
+  --text-color: #333;
+  --light-color: #f9f9f9;
+  --dark-color: #2f3542;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Add some spacing for the content below the header */
+main {
+  flex: 1;
+  width: 100%;
+  margin-top: 0;
+  padding: 2rem 5%;
+}
+
+/* Footer for future use */
+.footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 1.5rem 5%;
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+}
+
+/* Links styling to match header navigation */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
