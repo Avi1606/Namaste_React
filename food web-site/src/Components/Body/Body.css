@@ -1,0 +1,5 @@
+.restrorent-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin : auto;
+}

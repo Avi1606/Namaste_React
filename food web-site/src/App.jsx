@@ -1,10 +1,18 @@
 import Header from './Components/Header/Header.jsx';
+import Body from './Components/Body/Body.jsx';
+
 import './App.css'
 
 function App() {
-
   return (
-    <Header />
+      <div className="app">
+        <div className="header">
+          <Header />
+        </div>
+        <div className="body">
+          <Body />
+        </div>
+      </div>
   )
 }
 

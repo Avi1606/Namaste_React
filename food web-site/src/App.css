@@ -112,3 +112,11 @@ a:hover {
     padding: 1rem;
   }
 }
+
+.body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
