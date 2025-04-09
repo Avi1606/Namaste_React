@@ -1,0 +1,73 @@
+.restorent-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restorent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #d0d0d0;
+    cursor: pointer;
+}
+
+.restro-logo {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.restro-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restro-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.restro-cuisines {
+    font-size: 14px;
+    color: #686b78;
+    margin-bottom: 8px;
+    /* Remove nowrap to allow text wrapping */
+    white-space: normal;
+    overflow: hidden;
+    /* Use line clamp for multiline text truncation */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 40px; /* Set fixed height for 2 lines */
+}
+
+.restro-rating {
+    color: #3d9b6d;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.restro-delivery-time {
+    color: #686b78;
+    font-size: 13px;
+}
+
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

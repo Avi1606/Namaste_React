@@ -1,7 +1,7 @@
 import Header from './Components/Header/Header.jsx';
 import Body from './Components/Body/Body.jsx';
-
 import './App.css'
+import Body_swiggy from "./Components/Body(Swiggy)/Body_swiggy.jsx";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
           <Header />
         </div>
         <div className="body">
-          <Body />
+          <Body_swiggy/>
         </div>
       </div>
   )
