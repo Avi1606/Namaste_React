@@ -6,7 +6,7 @@ const Header = () => {
         <div className="header">
             <div className="logo">
                 <img className="logo"
-                     src="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png"/>
+                     src="https://logowik.com/content/uploads/images/serving-tray7701.logowik.com.webp"/>
             </div>
             <div className={"nav-bar"}>
                 <div className={"nav-bar-list"}>
