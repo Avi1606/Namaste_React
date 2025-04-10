@@ -1,12 +1,12 @@
 
 import './Header.css'
+import {LOGO} from "../Utils/Constants.jsx";
 
 const Header = () => {
     return (
         <div className="header">
             <div className="logo">
-                <img className="logo"
-                     src="https://logowik.com/content/uploads/images/serving-tray7701.logowik.com.webp"/>
+                <img className="logo" src={LOGO} />
             </div>
             <div className={"nav-bar"}>
                 <div className={"nav-bar-list"}>
