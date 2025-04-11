@@ -1,14 +1,28 @@
 import './Body_swiggy.css';
 import RestorentCard from "../Restorent Card (Swiggy)/RestorentCard.jsx";
-
 import {restodata} from "../Utils/Data.jsx";
+import {useState} from "react";
 
-const body_swiggy = () => {
+const Body_swiggy = () => {
+    const[resdata, setResdata] = useState(restodata);
+
     return (
         <div className="body">
-            <div className="search-bar">Search</div>
+            <div className="filter">
+                <button
+                    className ="filter-btn"
+                    onClick={() => {
+                        const fileterdata = restodata.filter(
+                            items => items.card.card.info.avgRating > 4
+                        );
+                        setResdata(fileterdata)
+                    }}
+                    >
+                    Top Rated Restorents
+                </button>
+            </div>
             <div className="restrorent-card">
-                {restodata.map(((restaurant,index) => (
+                {resdata.map(((restaurant,index) => (
                     <RestorentCard
                         key={index}
                         resName={restaurant.card.card.info.name}
@@ -23,4 +37,4 @@ const body_swiggy = () => {
     );
 };
 
-export default body_swiggy;
+export default Body_swiggy;
