@@ -6,6 +6,8 @@ import {useEffect, useState} from "react";
 const Body_swiggy = () => {
     const[resdata, setResdata] = useState(restodata);
 
+    const[search, setSearch] = useState("");
+
     // useEffect(() => {
     //     fetchData();
     // }, []);
@@ -24,21 +26,43 @@ const Body_swiggy = () => {
 
     return (
         <div className="body">
-            <div className="filter">
-                <button
-                    className ="filter-btn"
-                    onClick={() => {
-                        const fileterdata = restodata.filter(
-                            items => items.card.card.info.avgRating > 4
-                        );
-                        setResdata(fileterdata)
-                    }}
+            <div className="filter-search-container">
+                <div className="filter">
+                    <button
+                        className="filter-btn"
+                        onClick={() => {
+                            const fileterdata = restodata.filter(
+                                items => items.card.card.info.avgRating > 4
+                            );
+                            setResdata(fileterdata)
+                        }}
                     >
-                    Top Rated Restorents
-                </button>
+                        Top Rated Restorents
+                    </button>
+                </div>
+                <div className="filter-search">
+                    <input
+                        type="text"
+                        className="search-bar"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Search restaurants"
+                    />
+                    <button
+                        className="search-btn"
+                        onClick={() => {
+                            const fileterdata = restodata.filter(
+                                items => items.card.card.info.name.includes(search)
+                            )
+                            setResdata(fileterdata)
+                        }}
+                    >
+                        Search
+                    </button>
+                </div>
             </div>
             <div className="restrorent-card">
-                {resdata.map(((restaurant,index) => (
+                {resdata.map(((restaurant, index) => (
                     <RestorentCard
                         key={index}
                         resName={restaurant.card.card.info.name}
