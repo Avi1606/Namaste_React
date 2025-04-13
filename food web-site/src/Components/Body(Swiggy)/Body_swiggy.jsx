@@ -52,7 +52,7 @@ const Body_swiggy = () => {
                         className="search-btn"
                         onClick={() => {
                             const fileterdata = restodata.filter(
-                                items => items.card.card.info.name.includes(search)
+                                items => items.card.card.info.name.toLowerCase().includes(search.toLowerCase())
                             )
                             setResdata(fileterdata)
                         }}
