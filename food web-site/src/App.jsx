@@ -1,8 +1,9 @@
 import Header from './Components/Header/Header.jsx';
 import './App.css';
 import Body_swiggy from "./Components/Body(Swiggy)/Body_swiggy.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import AboutPage from "./Components/About.jsx";
+import ErrorPage from "./Components/ErrorPage.jsx";
 
 function AppLayout() {
     return (
@@ -11,22 +12,30 @@ function AppLayout() {
                 <Header/>
             </div>
             <div className="body">
-                <Body_swiggy/>
+                <Outlet />
             </div>
         </div>
-    )
+    );
 }
 
 // Create router with both paths
 const appRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppLayout />
+        element: <AppLayout />,
+        children: [
+            {
+                path:"/",
+                element: <Body_swiggy />
+            },
+            {
+                path: "/about",
+                element: <AboutPage />
+            }
+        ],
+        errorElement : <ErrorPage />
     },
-    {
-        path: "/about",
-        element: <AboutPage />
-    }
+
 ]);
 
 // Main App component
