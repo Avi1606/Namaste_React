@@ -4,9 +4,9 @@ import {restodata} from "../Utils/Data.jsx";
 import {useEffect, useState} from "react";
 
 const Body_swiggy = () => {
-    const[resdata, setResdata] = useState(restodata);
-
-    const[search, setSearch] = useState("");
+    const [resdata, setResdata] = useState(restodata);
+    const [search, setSearch] = useState("");
+    const [filterdata, setFilterdata] = useState(restodata);
 
     // useEffect(() => {
     //     fetchData();
@@ -19,6 +19,10 @@ const Body_swiggy = () => {
     //     // console.log();
     //     setResdata(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
     // }
+
+    useEffect(() => {
+        setFilterdata(resdata);
+    }, [resdata]);
 
     if (restodata.length === 0) {
         return <h2>Loading...</h2>;
@@ -34,7 +38,7 @@ const Body_swiggy = () => {
                             const fileterdata = restodata.filter(
                                 items => items.card.card.info.avgRating > 4
                             );
-                            setResdata(fileterdata)
+                            setFilterdata(fileterdata)
                         }}
                     >
                         Top Rated Restorents
@@ -51,10 +55,10 @@ const Body_swiggy = () => {
                     <button
                         className="search-btn"
                         onClick={() => {
-                            const fileterdata = restodata.filter(
+                            const filtered = restodata.filter(
                                 items => items.card.card.info.name.toLowerCase().includes(search.toLowerCase())
                             )
-                            setResdata(fileterdata)
+                            setFilterdata(filtered);
                         }}
                     >
                         Search
@@ -62,7 +66,7 @@ const Body_swiggy = () => {
                 </div>
             </div>
             <div className="restrorent-card">
-                {resdata.map(((restaurant, index) => (
+                {filterdata.map(((restaurant, index) => (
                     <RestorentCard
                         key={index}
                         resName={restaurant.card.card.info.name}
