@@ -2,8 +2,9 @@ import Header from './Components/Header/Header.jsx';
 import './App.css';
 import Body_swiggy from "./Components/Body(Swiggy)/Body_swiggy.jsx";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
-import AboutPage from "./Components/About.jsx";
-import ErrorPage from "./Components/ErrorPage.jsx";
+import AboutPage from "./Components/Extra Pages/About.jsx";
+import ErrorPage from "./Components/Extra Pages/ErrorPage.jsx";
+import RestorentMenu from "./Components/Extra Pages/RestorentMenu.jsx";
 
 function AppLayout() {
     return (
@@ -31,6 +32,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/about",
                 element: <AboutPage />
+            },
+            {
+                path:"/restorent/:resID",
+                element: <RestorentMenu />
             }
         ],
         errorElement : <ErrorPage />
