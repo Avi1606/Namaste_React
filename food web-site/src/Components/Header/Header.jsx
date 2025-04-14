@@ -1,8 +1,7 @@
-
 import './Header.css'
 import {LOGO} from "../Utils/Constants.jsx";
 import {useState} from "react";
-
+import {Link} from "react-router-dom";
 
 
 const Header = () => {
@@ -18,9 +17,9 @@ const Header = () => {
             <div className={"nav-bar"}>
                 <div className={"nav-bar-list"}>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li><Link to = "/">Home</Link></li>
+                        <li>Contacts Us</li>
+                        <li><Link to = "/about">About</Link></li>
                         <li>Cart</li>
                         <button className = "login-button"
                                 onClick ={() =>
