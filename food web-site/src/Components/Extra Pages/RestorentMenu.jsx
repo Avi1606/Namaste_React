@@ -1,23 +1,13 @@
-import {useEffect, useState} from "react";
+import useRestorent from "../Utils/useRestrorent.jsx";
+import Shimmer from "../ShimmerUi/shimmer.jsx";
 
 
 const RestorentMenu = () =>{
 
-    const[resInfo , setResInfo] = useState({})
+    const resInfo = useRestorent();
 
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const fetchData = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.450876021041882&lng=77.58510968186796&restaurantId=642963&catalog_qa=undefined&submitAction=ENTER");
-
-        const json = await data.json();
-        setResInfo(json.data.cards[2].card.card.info);
-    }
-
-    return (
+        return resInfo === null ? <Shimmer />
+        : (
         <div className="RestorentMenu">
             <div>
                 <h1>{resInfo.name}</h1>
