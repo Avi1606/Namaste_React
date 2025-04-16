@@ -2,9 +2,13 @@ import Header from './Components/Header/Header.jsx';
 import './App.css';
 import Body_swiggy from "./Components/Body(Swiggy)/Body_swiggy.jsx";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
-import AboutPage from "./Components/Extra Pages/About.jsx";
+// import AboutPage from "";
 import ErrorPage from "./Components/Extra Pages/ErrorPage.jsx";
 import RestorentMenu from "./Components/Extra Pages/RestorentMenu.jsx";
+import {lazy, Suspense} from "react";
+
+
+const about = lazy(() => import("./Components/Extra Pages/About.jsx"))
 
 function AppLayout() {
     return (
@@ -31,7 +35,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <AboutPage />
+                element: <Suspense fallback={<h2>Loading....</h2>}>{about}</Suspense>
             },
             {
                 path:"/restorent/:resID",
