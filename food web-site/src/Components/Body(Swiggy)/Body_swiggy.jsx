@@ -2,7 +2,7 @@ import './Body_swiggy.css';
 import RestorentCard from "../Restorent Card (Swiggy)/RestorentCard.jsx";
 import {restodata} from "../Utils/Data.jsx";
 import {useEffect, useState} from "react";
-import onlineStatus from "../onlineStatus/onlineStatus.jsx";
+import useOnlineStatus from "../onlineStatus/useOnlineStatus.jsx";
 import OfflinePage from "../OnlinePage/OfflinePage.jsx";
 
 const Body_swiggy = () => {
@@ -18,7 +18,7 @@ const Body_swiggy = () => {
         return <h2>Loading...</h2>;
     }
 
-    const onlinestatus = onlineStatus();
+    const onlinestatus = useOnlineStatus();
 
     if(onlinestatus === false) return (<OfflinePage />);
 
