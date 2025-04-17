@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9368275-3be0-43e5-b739-ec8261528ee1" name="Changes" comment="created shimmer ui">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javascript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Avi1606&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Avi1606/Namaste_React.git&quot;,
+    &quot;accountId&quot;: &quot;016e73cb-0bf4-4dfe-a9c2-8191d9ef8af3&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/food web-site/src/Components/Body(Swiggy)/Body_swiggy.jsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vRwRdWR45wauXp89nCQZaiGkjN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.RestorentCard.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.16.0",
+    "javascript.nodejs.core.library.typings.version": "20.16.15",
+    "last_opened_file_path": "D:/Brave Download/tailwind-idea-0.0.7.zip",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.npm dev.executor": "Run",
+    "settings.editor.selected.configurable": "web.server",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src" />
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src" />
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site" />
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components" />
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components\Extra Pages" />
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components\Header" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="npm dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9368275-3be0-43e5-b739-ec8261528ee1" name="Changes" comment="" />
+      <created>1744121188945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744121188945</updated>
+      <workItem from="1744121189860" duration="2571000" />
+      <workItem from="1744176608619" duration="9481000" />
+      <workItem from="1744191933883" duration="1150000" />
+      <workItem from="1744194171571" duration="22682000" />
+      <workItem from="1744443754928" duration="1237000" />
+      <workItem from="1744517703990" duration="29765000" />
+      <workItem from="1744693511194" duration="15946000" />
+      <workItem from="1744777333853" duration="6492000" />
+      <workItem from="1744787492748" duration="361000" />
+      <workItem from="1744787871969" duration="5219000" />
+      <workItem from="1744870544102" duration="619000" />
+      <workItem from="1744871312122" duration="99000" />
+      <workItem from="1744880195740" duration="38000" />
+      <workItem from="1744880258654" duration="1295000" />
+      <workItem from="1744882067984" duration="174000" />
+      <workItem from="1744882255715" duration="393000" />
+    </task>
+    <task id="LOCAL-00001" summary="created shimmer ui">
+      <option name="closed" value="true" />
+      <created>1744696060726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744696060726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created shimmer ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="created shimmer ui" />
+  </component>
+  <component name="VueSettings">
+    <option name="useTypesFromServer" value="true" />
+  </component>
+</project>

@@ -12,7 +12,7 @@ const about = lazy(() => import("./Components/Extra Pages/About.jsx"))
 
 function AppLayout() {
     return (
-        <div className="fl">
+        <div className="flex flex-col">
             <div className="header">
                 <Header/>
             </div>
