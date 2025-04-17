@@ -1,5 +1,5 @@
 import './Body_swiggy.css';
-import RestorentCard from "../Restorent Card (Swiggy)/RestorentCard.jsx";
+import RestorentCard, {withPromotion} from "../Restorent Card (Swiggy)/RestorentCard.jsx";
 import {restodata} from "../Utils/Data.jsx";
 import {useEffect, useState} from "react";
 import useOnlineStatus from "../onlineStatus/useOnlineStatus.jsx";
@@ -9,6 +9,8 @@ const Body_swiggy = () => {
     const [resdata, setResdata] = useState(restodata);
     const [search, setSearch] = useState("");
     const [filterdata, setFilterdata] = useState(restodata);
+
+    const promotioncard = withPromotion(RestorentCard);
 
     useEffect(() => {
         setFilterdata(resdata);
@@ -60,16 +62,21 @@ const Body_swiggy = () => {
                 </div>
             </div>
             <div className="restrorent-card">
-                {filterdata.map(((restaurant, index) => (
-                    <RestorentCard
-                        key={index}
-                        resName={restaurant.card.card.info.name}
-                        resCuisines={restaurant.card.card.info.cuisines}
-                        resRating={restaurant.card.card.info.avgRatingString}
-                        imgUrl={restaurant.card.card.info.cloudinaryImageId}
-                        resDeliveryTime={restaurant.card.card.info.sla.slaString}
-                    />
-                )))}
+                {filterdata.map((restaurant, index) => {
+                    const { info } = restaurant.card.card;
+                    const Component = info.promoted ? promotioncard : RestorentCard;
+
+                    return (
+                        <Component
+                            key={index}
+                            resName={info.name}
+                            resCuisines={info.cuisines}
+                            resRating={info.avgRatingString}
+                            imgUrl={info.cloudinaryImageId}
+                            resDeliveryTime={info.sla.slaString}
+                        />
+                    );
+                })}
             </div>
         </div>
     );

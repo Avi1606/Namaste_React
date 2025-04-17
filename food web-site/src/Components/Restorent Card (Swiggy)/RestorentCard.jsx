@@ -14,4 +14,18 @@ const RestorentCard = (props) => {
         </div>
     );
 };
+
+export const withPromotion = (RestorentCard) => {
+                return (props) => {
+                    return (
+                        <div className="relative">
+                            <label className="absolute top-2 left-2 bg-pink-800 text-white px-2 py-1 rounded-md text-sm font-medium z-10">
+                                Promoted
+                            </label>
+                            <RestorentCard {...props} />
+                        </div>
+                    );
+                }
+            }
+
 export default RestorentCard;
