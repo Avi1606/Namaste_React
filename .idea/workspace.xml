@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9368275-3be0-43e5-b739-ec8261528ee1" name="Changes" comment="created shimmer ui">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food web-site/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food web-site/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javascript.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "npm.npm dev.executor": "Run",
-    "settings.editor.selected.configurable": "web.server",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -137,7 +131,8 @@
       <workItem from="1744880195740" duration="38000" />
       <workItem from="1744880258654" duration="1295000" />
       <workItem from="1744882067984" duration="174000" />
-      <workItem from="1744882255715" duration="393000" />
+      <workItem from="1744882255715" duration="728000" />
+      <workItem from="1744883010417" duration="2393000" />
     </task>
     <task id="LOCAL-00001" summary="created shimmer ui">
       <option name="closed" value="true" />

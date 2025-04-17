@@ -8,15 +8,15 @@ import RestorentMenu from "./Components/Extra Pages/RestorentMenu.jsx";
 import {lazy, Suspense} from "react";
 
 
-const about = lazy(() => import("./Components/Extra Pages/About.jsx"))
+const About = lazy(() => import("./Components/Extra Pages/About.jsx"))
 
 function AppLayout() {
     return (
         <div className="flex flex-col">
-            <div className="header">
+            <div className="border-y-green-600">
                 <Header/>
             </div>
-            <div className="body">
+            <div className="border-y-green-600">
                 <Outlet />
             </div>
         </div>
@@ -35,7 +35,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <Suspense fallback={<h2>Loading....</h2>}>{about}</Suspense>
+                element: <Suspense fallback={<h2>Loading....</h2>}><About /></Suspense>
             },
             {
                 path:"/restorent/:resID",
