@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9368275-3be0-43e5-b739-ec8261528ee1" name="Changes" comment="created shimmer ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food web-site/src/Components/Body(Swiggy)/Body_swiggy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/Components/Body(Swiggy)/Body_swiggy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/food web-site/src/Components/Restorent Card (Swiggy)/RestorentCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/Components/Restorent Card (Swiggy)/RestorentCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,7 @@
       <workItem from="1744880258654" duration="1295000" />
       <workItem from="1744882067984" duration="174000" />
       <workItem from="1744882255715" duration="728000" />
-      <workItem from="1744883010417" duration="7732000" />
+      <workItem from="1744883010417" duration="10648000" />
     </task>
     <task id="LOCAL-00001" summary="created shimmer ui">
       <option name="closed" value="true" />

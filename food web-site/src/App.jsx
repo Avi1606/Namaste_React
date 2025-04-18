@@ -12,17 +12,16 @@ const About = lazy(() => import("./Components/Extra Pages/About.jsx"))
 
 function AppLayout() {
     return (
-        <div className="flex flex-col">
-            <div className="border-y-green-600">
+        <div className="flex flex-col min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
+            <div>
                 <Header/>
             </div>
-            <div className="border-y-green-600">
+            <div className="flex-grow">
                 <Outlet />
             </div>
         </div>
     );
 }
-
 // Create router with both paths
 const appRouter = createBrowserRouter([
     {
