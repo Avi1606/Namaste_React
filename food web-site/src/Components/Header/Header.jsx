@@ -1,18 +1,20 @@
 import './Header.css'
 import {LOGO} from "../Utils/Constants.jsx";
-import {useState} from "react";
+import {useState, useContext} from "react";
 import {Link} from "react-router-dom";
+import userContext from "../userContext.jsx";
 
 
 const Header = () => {
 
     const[loginButton, setLoginButton] = useState("Login");
 
-    if (loginButton === "Login") {}
+     const {loggedInUser} = useContext(userContext)
+
     return (
-        <div className="header">
+        <div className="bg-auto">
             <div className="logo">
-                <img className="logo" src={LOGO} />
+                <img className="logo" src={LOGO} alt="Logo" />
             </div>
             <div className={"nav-bar"}>
                 <div className={"nav-bar-list"}>
@@ -21,6 +23,7 @@ const Header = () => {
                         <li>Contacts Us</li>
                         <li><Link to = "/about">About</Link></li>
                         <li>Cart</li>
+                        <li>{loggedInUser}</li>
                         <button className = "login-button"
                                 onClick ={() =>
                                     loginButton ==="Login" ?
@@ -32,7 +35,6 @@ const Header = () => {
                     </ul>
                 </div>
             </div>
-
         </div>
     );
 }

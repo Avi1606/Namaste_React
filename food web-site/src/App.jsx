@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import ErrorPage from "./Components/Extra Pages/ErrorPage.jsx";
 import RestorentMenu from "./Components/Extra Pages/RestorentMenu.jsx";
 import {lazy, Suspense} from "react";
+import UserContext from "./Components/userContext.jsx";
 
 
 const About = lazy(() => import("./Components/Extra Pages/About.jsx"))
@@ -17,8 +18,9 @@ function AppLayout() {
                 <Header/>
             </div>
             <div className="flex-grow">
-                <Outlet />
+                <Outlet/>
             </div>
+
         </div>
     );
 }
