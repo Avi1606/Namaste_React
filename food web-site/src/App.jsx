@@ -6,13 +6,18 @@ import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import ErrorPage from "./Components/Extra Pages/ErrorPage.jsx";
 import RestorentMenu from "./Components/Extra Pages/RestorentMenu.jsx";
 import {lazy, Suspense} from "react";
-import UserContext from "./Components/userContext.jsx";
+import UserContext from "./Components/useContext/userContext.jsx";
+import {Provider} from "react-redux";
+import appstore from "./Components/Store/app.jsx";
+
 
 
 const About = lazy(() => import("./Components/Extra Pages/About.jsx"))
 
 function AppLayout() {
+
     return (
+        <Provider store={appstore}>
         <div className="flex flex-col min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
             <div>
                 <Header/>
@@ -22,6 +27,7 @@ function AppLayout() {
             </div>
 
         </div>
+        </Provider>
     );
 }
 // Create router with both paths

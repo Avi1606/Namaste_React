@@ -4,6 +4,7 @@ import {restodata} from "../Utils/Data.jsx";
 import {useEffect, useState} from "react";
 import useOnlineStatus from "../onlineStatus/useOnlineStatus.jsx";
 import OfflinePage from "../OnlinePage/OfflinePage.jsx";
+import {useSelector} from "react-redux";
 
 const Body_swiggy = () => {
     const [resdata, setResdata] = useState(restodata);
@@ -21,6 +22,8 @@ const Body_swiggy = () => {
     }
 
     const onlinestatus = useOnlineStatus();
+
+    const cartItems = useSelector((store) =>store.cart.items)
 
     if(onlinestatus === false) return (<OfflinePage />);
 

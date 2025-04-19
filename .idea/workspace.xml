@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9368275-3be0-43e5-b739-ec8261528ee1" name="Changes" comment="created shimmer ui">
-      <change afterPath="$PROJECT_DIR$/food web-site/src/Components/userContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food web-site/src/Components/Store/app.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food web-site/src/Components/Store/slice.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food web-site/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/food web-site/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/food web-site/src/Components/userContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/food web-site/src/Components/useContext/userContext.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +88,11 @@
       <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components\useContext" />
       <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src" />
       <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site" />
       <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components" />
       <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components\Extra Pages" />
-      <recent name="C:\Users\HP\WebstormProjects\namste_react\food web-site\src\Components\Header" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,7 +139,7 @@
       <workItem from="1744882067984" duration="174000" />
       <workItem from="1744882255715" duration="728000" />
       <workItem from="1744883010417" duration="20356000" />
-      <workItem from="1745037154449" duration="661000" />
+      <workItem from="1745037154449" duration="6357000" />
     </task>
     <task id="LOCAL-00001" summary="created shimmer ui">
       <option name="closed" value="true" />
